@@ -22,22 +22,40 @@ Aggregation:
     db.demo_inge.findAll();
 ```
   
-  db.demo_inge.findOne();
-  
-  db.demo_inge.distinct("age");
-  
-  db.demo_inge.find({"gender":"female"}).count();
-  
-  db.demo_inge.find({age:{ $gt: 30, $lt: 33}}).sort({age:1});
-  
-  db.demo_inge.find({age:{ $gt: 30, $lt: 33}}).sort({age:1}).pretty();
-  
-  db.demo_inge.aggregate([{$group: {_id:"PromedioEdadQuery", prom_edad:{$avg:"$age"}, max_edad:{$max:"$age"}, min_edad:{$min:"$age"}}}]).pretty();
+```bash
+    db.demo_inge.findOne();
+```
+
+```bash
+    db.demo_inge.distinct("age");
+```
+
+```bash
+    db.demo_inge.find({"gender":"female"}).count();
+```
+
+```bash
+    db.demo_inge.find({age:{ $gt: 30, $lt: 33}}).sort({age:1});
+```
+
+```bash
+    db.demo_inge.find({age:{ $gt: 30, $lt: 33}}).sort({age:1}).pretty();
+```
+
+```bash
+    db.demo_inge.aggregate([{$group: {_id:"PromedioEdadQuery", prom_edad:{$avg:"$age"}, max_edad:{$max:"$age"}, min_edad:{$min:"$age"}}}]).pretty();
+```
 
 Map Reduce:
 
-  db.example1_results().find();
+```bash
+    db.example1_results().find();
+```
   
-  db.example2_results().find();
-  
-  db.example3_results().find();
+```bash
+    db.example2_results().find();
+```
+
+```bash
+    db.example3_results().find();
+```
