@@ -18,7 +18,9 @@ And MongoDB must be started:
 
 Aggregation:
 
-  db.demo_inge.findAll();
+```bash
+    db.demo_inge.findAll();
+```
   
   db.demo_inge.findOne();
   
